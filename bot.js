@@ -107,7 +107,7 @@ client.on('message', function(message) {
 	
 client.on('message', message => {
     if (message.author.bot) return;
-     if (message.content === prefix + "~help-E") {
+     if (message.content === prefix + "+help-E") {
 		 message.channel.send('**The Message Was Sent On Private**');
             
 	
@@ -206,7 +206,7 @@ bot invite link:https://discordapp.com/oauth2/authorize?client_id=47162157923565
 
 client.on('message', message => {
     if (message.author.bot) return;
-     if (message.content === prefix + "+help") {
+     if (message.content === prefix + "+help-ar") {
 		 message.channel.send('**تم ارسالك في الخاص**');
             
 	
@@ -302,7 +302,7 @@ bot invite link: https://discordapp.com/oauth2/authorize?client_id=4716215792356
 });
 
 client.on('message', message => {
-    if (message.content.startsWith(prefix + "invs")) {
+    if (message.content.startsWith(prefix + "+invs")) {
      if(!message.channel.guild) return;
 if (message.author.bot) return;
         message.channel.createInvite({
@@ -357,7 +357,7 @@ message.channel.send('**تم الارسال في الخاص**');
 
 client.on('message', message => {
     if (message.author.bot) return;
-     if (message.content === prefix + "invite") {
+     if (message.content === prefix + "+invite") {
 
 
  message.author.sendMessage(`
@@ -409,7 +409,7 @@ client.on('message', message => {
         if (message.guild) {
        let embed = new Discord.RichEmbed()
         let args = message.content.split(' ').slice(1).join(' ');
-    if(message.content.split(' ')[0] == prefix + 'bc') {
+    if(message.content.split(' ')[0] == prefix + '+bc') {
         if (!args[1]) {
     message.channel.send("**.bc <message>**");
     return;
