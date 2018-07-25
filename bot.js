@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 
 client.on("message", message => {
- if (message.content === ".help") {
+ if (message.content === "f!help") {
   const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
@@ -177,7 +177,7 @@ const Sra7a = [
 	 'صراحه  |  ما هي أمنياتك المُستقبلية؟‏',
 ]
    client.on('message', message => {
- if (message.content.startsWith('.صراحه')) {
+ if (message.content.startsWith('f!صراحه')) {
      if(!message.channel.guild) return message.reply('** This command only for servers **');
   var client= new Discord.RichEmbed()
   .setTitle("لعبة صراحة ..")
@@ -249,7 +249,7 @@ const Za7f = [
 
 
  client.on('message', message => {
-   if (message.content.startsWith(".عقاب")) {
+   if (message.content.startsWith("f!عقاب")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -262,7 +262,7 @@ const Za7f = [
 });
 
 
-  var prefix = ".";
+  var prefix = "f!";
 var rebel = ["https://f.top4top.net/p_682it2tg6.png","https://e.top4top.net/p_682a1cus5.png","https://d.top4top.net/p_682pycol4.png","https://c.top4top.net/p_682vqehy3.png","https://b.top4top.net/p_682mlf9d2.png","https://a.top4top.net/p_6827dule1.png","https://b.top4top.net/p_682g1meb10.png","https://a.top4top.net/p_682jgp4v9.png","https://f.top4top.net/p_682d4joq8.png","https://e.top4top.net/p_6828o0e47.png","https://d.top4top.net/p_6824x7sy6.png","https://c.top4top.net/p_682gzo2l5.png","https://b.top4top.net/p_68295qg04.png","https://a.top4top.net/p_682zrz6h3.png","https://f.top4top.net/p_6828vkzc2.png","https://e.top4top.net/p_682i8tb11.png"]
     client.on('message', message => {
         var args = message.content.split(" ").slice(1);
@@ -306,7 +306,7 @@ message.channel.sendEmbed(cat);
 ]
 
  client.on('message', message => {
-   if (message.content.startsWith(".كت تويت")) {
+   if (message.content.startsWith("f!كت تويت")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -334,7 +334,7 @@ const secreT = [
 
 
  client.on('message', message => {
-   if (message.content.startsWith(".خواطر")) {
+   if (message.content.startsWith("f!خواطر")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -354,7 +354,7 @@ const Love = [  "**احبك / عدد قطرات المـــطر والشجر و
 
 
  client.on('message', message => {
-   if (message.content.startsWith(".حب")) {
+   if (message.content.startsWith("f!حب")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -421,7 +421,7 @@ const zead = [
    '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر , ساعدني في نشر البوت وادخل هذا السيرفر  ***'
 ]
  client.on('message', message => {
- if (message.content.startsWith('.مريم')) {
+ if (message.content.startsWith('f!مريم')) {
   var mariam= new Discord.RichEmbed()
   .setTitle("لعبة مريم ..")
   .setColor('RANDOM')
@@ -438,7 +438,7 @@ const zead = [
 
 
 
-            var prefix = ".";
+            var prefix = "f!";
 client.on('message', message => {
          if (message.content === prefix + "dt") {
          if (!message.channel.guild) return message.reply('** This command only for servers **');  
@@ -505,7 +505,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-var prefix = ".";
+var prefix = "f!";
 
     if (message.author.id === client.user.id) return;
     if (message.guild) {
@@ -578,7 +578,7 @@ if (message.content.startsWith(prefix + "uptime")) {
 });
 
 client.on('message', function(msg) {
-         var prefix = "."
+         var prefix = "f!"
     if(msg.content.startsWith (prefix  + 'server')) {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
@@ -633,7 +633,7 @@ if(command === `${prefix}message`) {
 });
   
    client.on("message", msg => {
-           var prefix = ".";
+           var prefix = "f!";
   if(msg.content.startsWith (prefix + "id")) {
     if(!msg.channel.guild) return msg.reply('**:x: اسف لكن هذا الامر للسيرفرات فقط **');         
       const embed = new Discord.RichEmbed();
@@ -653,7 +653,7 @@ if(command === `${prefix}message`) {
 });
 
 client.on('message', message => {
-    if(message.content == '.member') {
+    if(message.content == 'f!member') {
     const embed = new Discord.RichEmbed()
     .setDescription(`**Members info🔋
 :green_heart: online:   ${message.guild.members.filter(m=>m.presence.status == 'online').size}
@@ -668,7 +668,7 @@ client.on('message', message => {
   
 
   
-    var prefix = ".";
+    var prefix = "f!";
 var cats = ["https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg","http://www.dogbazar.org/wp-content/uploads/2014/09/british-bull-dog-puppies.jpg","http://cdn2-www.dogtime.com/assets/uploads/gallery/german-shepherd-dog-breed-pictures/standing-7.jpg","http://cdn.akc.org/Marketplace/Breeds/German_Shepherd_Dog_SERP.jpg","https://animalso.com/wp-content/uploads/2016/12/black-german-shepherd_2.jpg","https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpg","https://www.petfinder.com/wp-content/uploads/2012/11/101438745-cat-conjunctivitis-causes.jpg","http://www.i-love-cats.com/images/2015/04/12/cat-wallpaper-38.jpg","https://www.aspca.org/sites/default/files/cat-care_urine-marking_main-image.jpg","https://s-media-cache-ak0.pinimg.com/originals/f0/3b/76/f03b7614dfadbbe4c2e8f88b69d12e04.jpg","http://www.rd.com/wp-content/uploads/sites/2/2016/04/15-cat-wants-to-tell-you-attention.jpg","https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg","https://www.adelaidezoo.com.au/wp-content/uploads/sites/2/animals/GiantPanda3Slider.jpg","http://imagem.band.com.br/f_230168.jpg"]
     client.on('message', message => {
         var args = message.content.split(" ").slice(1);
@@ -680,7 +680,7 @@ message.channel.sendEmbed(cat);
 });
 
    client.on("message", message => {
-    const prefix = "."
+    const prefix = "f!"
               
           if(!message.channel.guild) return;
    if(message.author.bot) return;
@@ -699,7 +699,7 @@ message.channel.sendEmbed(cat);
   });
 
 client.on('message', message => {
-    if (message.content.startsWith(".avatar")) {
+    if (message.content.startsWith("!avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -784,7 +784,7 @@ message.channel.sendMessage('تـم إنـشاء روم كـتابـي')
 
 
 client.on("message", (message) => {
-if (message.content.startsWith(".cv")) {
+if (message.content.startsWith("f!cv")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'voice');
@@ -807,14 +807,14 @@ client.on("message", (message) => {
 
  client.on('message' , message => {
 
-    if (message.content === ".invite") {
+    if (message.content === "f!invite") {
         if(!message.channel.guild) return message.reply('**الآمر فقط في السيرفرات**');
      const embed = new Discord.RichEmbed()
  .setColor("RANDOM")
  .setThumbnail(client.user.avatarURL)     
  .setDescription("Add me" + `
  **
-رابط البوت https://discordapp.com/oauth2/authorize?client_id=471621579235655681&permissions=0&scope=bot
+رابط البوت https://discordapp.com/api/oauth2/authorize?client_id=447792246494986250&permissions=2146958583&scope=bot
  **
 `);
   message.author.sendEmbed(embed);
@@ -824,21 +824,21 @@ client.on("message", (message) => {
 
   client.on('message' , message => {
 
-    if (message.content === ".support") {
+    if (message.content === "f!support") {
         if(!message.channel.guild) return message.reply('**الآمر فقط في السيرفرات**');
      const embed = new Discord.RichEmbed()
  .setColor("RANDOM")
  .setThumbnail(client.user.avatarURL)     
  .setDescription(" ***welcome To server support*** " + `
  **
-رابط السيرفر https://discord.gg/CSswzUY
+رابط السيرفر https://discord.gg/Hf9TW4pY
  **
 `);
   message.author.sendEmbed(embed);
    }
 });
 
-var prefix = ".";
+var prefix = "f!";
 
 client.on('message', message => {
   if (message.author.bot) return;
@@ -954,7 +954,7 @@ client.on("message", message => {
   
   let command = message.content.split(" ")[0];
   
-  if (command === ".mute") {
+  if (command === "f!mute") {
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
   let user = message.mentions.users.first();
   let modlog = client.channels.find('name', 'mute-log');
@@ -1092,7 +1092,7 @@ client.on('message', message => {
  
 
  
-var prefix = "."
+var prefix = "f!"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -1155,7 +1155,7 @@ client.on("message", message => {
   
 client.on('message', message => {
 
-if (message.content.startsWith(".add.r")) {
+if (message.content.startsWith("f!add.r")) {
              if(!message.channel.guild) return message.reply('**Commands in the server**');
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply('⚠ **You do not have permissions**');
         let args = message.content.split(" ").slice(1);
@@ -1215,7 +1215,7 @@ client.on('ready',  () => {
 client.on('ready', function(){
     client.user.setStatus("dnd");
     var ms = 100000 ;
-    var setGame = [`.help Servers ${client.guilds.size} `,`f!invite Users ${client.users.size}`];
+    var setGame = [`f!help Servers ${client.guilds.size} `,`f!invite Users ${client.users.size}`];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -1240,7 +1240,7 @@ client.user.setStatus("dnd");
 
 client.on('message', function(message) {
                   if(!message.channel.guild) return;
-    if(message.content ===  '.color 50') {
+    if(message.content ===  'f!color 50') {
         if(message.member.hasPermission('MANAGE_ROLES')) {
             setInterval(function(){})
             message.channel.send('جاري عمل الالوان |✅')
@@ -1251,7 +1251,7 @@ client.on('message', function(message) {
 });
 
 client.on('message', message=>{
-    if (message.content ===  '.color 50'){
+    if (message.content ===  'f!color 50'){
               if(!message.channel.guild) return;
             if (message.member.hasPermission('MANAGE_ROLES')){
                 setInterval(function(){})
@@ -1268,7 +1268,7 @@ client.on('message', message=>{
 
 client.on('message', function(message) {
                   if(!message.channel.guild) return;
-    if(message.content ===  '.color 100') {
+    if(message.content ===  'f!color 100') {
         if(message.member.hasPermission('MANAGE_ROLES')) {
             setInterval(function(){})
             message.channel.send('جاري عمل الالوان |✅')
@@ -1279,7 +1279,7 @@ client.on('message', function(message) {
 });
 
 client.on('message', message=>{
-    if (message.content ===  '.color 100'){
+    if (message.content ===  'f!color 100'){
               if(!message.channel.guild) return;
             if (message.member.hasPermission('MANAGE_ROLES')){
                 setInterval(function(){})
@@ -1321,106 +1321,106 @@ client.on('message', message=>{
     }
 });
 
-var x1 = ".color 1"
-var x2 = ".color 2"
-var x3 = ".color 3"
-var x4 = ".color 4"
-var x5 = ".color 5"
-var x6 = ".color 6"
-var x7 = ".color 7"
-var x8 = ".color 8"
-var x9 = ".color 9"
-var x10 = ".color 10"
-var x11 = ".color 11"
-var x12 = ".color 12"
-var x13 = ".color 13"
-var x14 = ".color 14"
-var x15 = ".color 15"
-var x16 = ".color 16"
-var x17 = ".color 17"
-var x18 = ".color 18"
-var x19 = ".color 19"
-var x20 = ".color 20"
-var x21 = ".color 21"
-var x22 = ".color 22"
-var x23 = ".color 23"
-var x24 = ".color 24"
-var x25 = ".color 25"
-var x26 = ".color 26"
-var x27 = ".color 27"
-var x28 = ".color 28"
-var x29 = ".color 29"
-var x30 = ".color 30"
-var x31 = ".color 31"
-var x32 = ".color 32"
-var x33 = ".color 33"
-var x34 = ".color 34"
-var x35 = ".color 35"
-var x36 = ".color 36"
-var x37 = ".color 37"
-var x38 = ".color 38"
-var x39 = ".color 39"
-var x40 = ".color 40"
-var x41 = ".color 41"
-var x42 = ".color 42"
-var x43 = ".color 43"
-var x44 = ".color 44"
-var x45 = ".color 45"
-var x46 = ".color 46"
-var x47 = ".color 47"
-var x48 = ".color 48"
-var x49 = ".color 49"
-var x50 = ".color 50"
-var x51 = ".color 51"
-var x52 = ".color 52"
-var x53 = ".color 53"
-var x54 = ".color 54"
-var x55 = ".color 55"
-var x56 = ".color 56"
-var x57 = ".color 57"
-var x58 = ".color 58"
-var x59 = ".color 59"
-var x60 = ".color 60"
-var x61 = ".color 61"
-var x62 = ".color 62"
-var x63 = ".color 63"
-var x64 = ".color 64"
-var x65 = ".color 65"
-var x66 = ".color 66"
-var x67 = ".color 67"
-var x68 = ".color 68"
-var x69 = ".color 69"
-var x70 = ".color 70"
-var x71 = ".color 71"
-var x72 = ".color 72"
-var x73 = ".color 73"
-var x74 = ".color 74"
-var x75 = ".color 75"
-var x76 = ".color 76"
-var x77 = ".color 77"
-var x78 = ".color 78"
-var x79 = ".color 79"
-var x80 = ".color 80"
-var x81 = ".color 81"
-var x82 = ".color 82"
-var x83 = ".color 83"
-var x84 = ".color 84"
-var x85 = ".color 85"
-var x86 = ".color 86"
-var x87 = ".color 87"
-var x88 = ".color 88"
-var x89 = ".color 89"
-var x90 = ".color 90"
-var x91 = ".color 91"
-var x92 = ".color 92"
-var x93 = ".color 93"
-var x94 = ".color 94"
-var x95 = ".color 95"
-var x96 = ".color 96"
-var x97 = ".color 97"
-var x98 = ".color 98"
-var x99 = ".color 99"
-var x100 = ".color 100"
+var x1 = "f!color 1"
+var x2 = "f!color 2"
+var x3 = "f!color 3"
+var x4 = "f!color 4"
+var x5 = "f!color 5"
+var x6 = "f!color 6"
+var x7 = "f!color 7"
+var x8 = "f!color 8"
+var x9 = "f!color 9"
+var x10 = "f!color 10"
+var x11 = "f!color 11"
+var x12 = "f!color 12"
+var x13 = "f!color 13"
+var x14 = "f!color 14"
+var x15 = "f!color 15"
+var x16 = "f!color 16"
+var x17 = "f!color 17"
+var x18 = "f!color 18"
+var x19 = "f!color 19"
+var x20 = "f!color 20"
+var x21 = "f!color 21"
+var x22 = "f!color 22"
+var x23 = "f!color 23"
+var x24 = "f!color 24"
+var x25 = "f!color 25"
+var x26 = "f!color 26"
+var x27 = "f!color 27"
+var x28 = "f!color 28"
+var x29 = "f!color 29"
+var x30 = "f!color 30"
+var x31 = "f!color 31"
+var x32 = "f!color 32"
+var x33 = "f!color 33"
+var x34 = "f!color 34"
+var x35 = "f!color 35"
+var x36 = "f!color 36"
+var x37 = "f!color 37"
+var x38 = "f!color 38"
+var x39 = "f!color 39"
+var x40 = "f!color 40"
+var x41 = "f!color 41"
+var x42 = "f!color 42"
+var x43 = "f!color 43"
+var x44 = "f!color 44"
+var x45 = "f!color 45"
+var x46 = "f!color 46"
+var x47 = "f!color 47"
+var x48 = "f!color 48"
+var x49 = "f!color 49"
+var x50 = "f!color 50"
+var x51 = "f!color 51"
+var x52 = "f!color 52"
+var x53 = "f!color 53"
+var x54 = "f!color 54"
+var x55 = "f!color 55"
+var x56 = "f!color 56"
+var x57 = "f!color 57"
+var x58 = "f!color 58"
+var x59 = "f!color 59"
+var x60 = "f!color 60"
+var x61 = "f!color 61"
+var x62 = "f!color 62"
+var x63 = "f!color 63"
+var x64 = "f!color 64"
+var x65 = "f!color 65"
+var x66 = "f!color 66"
+var x67 = "f!color 67"
+var x68 = "f!color 68"
+var x69 = "f!color 69"
+var x70 = "f!color 70"
+var x71 = "f!color 71"
+var x72 = "f!color 72"
+var x73 = "f!color 73"
+var x74 = "f!color 74"
+var x75 = "f!color 75"
+var x76 = "f!color 76"
+var x77 = "f!color 77"
+var x78 = "f!color 78"
+var x79 = "f!color 79"
+var x80 = "f!color 80"
+var x81 = "f!color 81"
+var x82 = "f!color 82"
+var x83 = "f!color 83"
+var x84 = "f!color 84"
+var x85 = "f!color 85"
+var x86 = "f!color 86"
+var x87 = "f!color 87"
+var x88 = "f!color 88"
+var x89 = "f!color 89"
+var x90 = "f!color 90"
+var x91 = "f!color 91"
+var x92 = "f!color 92"
+var x93 = "f!color 93"
+var x94 = "f!color 94"
+var x95 = "f!color 95"
+var x96 = "f!color 96"
+var x97 = "f!color 97"
+var x98 = "f!color 98"
+var x99 = "f!color 99"
+var x100 = "f!color 100"
 
 client.on('message', message => {
 	if (message.content === x1) {
@@ -12501,7 +12501,7 @@ message.member.addRole(message.guild.roles.find("name", "100"));
 	}
 
 
-  if (message.content === '.colors') {
+  if (message.content === 'f!colors') {
       if (!message.channel.guild) return;
     message.channel.sendFile('URL-Of-colors-Img');
   }
