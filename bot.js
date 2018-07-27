@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on('ready', () => {
-  client.user.setGame(` By Suhaib #4272 ');
+  client.user.setGame(`استمتع بالسيرفر ');
   console.log('---------------');
   console.log('Desert Bot Is idle')
   console.log('---------------')
