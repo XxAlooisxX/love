@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on('ready', () => {
-  client.user.setGame(` By Suhaib #4272 .`,'https://www.twitch.tv/v5bz');
+  client.user.setGame(` Arrio#4084 .`,'https://www.twitch.tv/v5bz');
   console.log('---------------');
-  console.log('Desert Bot Is idle')
+  console.log('Desert Bot Is Online')
   console.log('---------------')
 });
 client.on('message', message => {
