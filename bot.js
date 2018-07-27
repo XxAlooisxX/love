@@ -241,12 +241,12 @@ client.on('message', message => {
 });
 client.on('message', message => {
 if (message.content === ".help") {
-message.reply("**تم ارسال اوامر البوت في الخاص**")
+message.reply("**تم ارسال مبرمج البوت في الخاص**")
 
 }
 });
 client.on('message', message => {
-     if (message.content === ".bot") {
+     if (message.content === "..bot") {
      let embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .addField("**Servers:**" , client.guilds.size)
@@ -258,7 +258,7 @@ message.channel.sendEmbed(embed);
 });
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`Desert Bot- Script By : i1Suhaib`);
+      console.log(`استمتع بالسيرفر`);
         console.log(`----------------`);
       console.log(`ON ${client.guilds.size} استمتع بالسيرفر ' `);
     console.log(`----------------`);
