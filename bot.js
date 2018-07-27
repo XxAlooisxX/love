@@ -260,7 +260,7 @@ client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Script By : i1Suhaib`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
+      console.log(`ON ${client.guilds.size} استمتع بالسيرفر ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(` *help - New Bot`,)
