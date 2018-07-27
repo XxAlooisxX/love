@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on('ready', () => {
-  client.user.setGame(` By Arrio#4804 ');
+  client.user.setGame(` By Suhaib #4272 .`,'https://www.twitch.tv/v5bz');
   console.log('---------------');
   console.log('Desert Bot Is idle')
   console.log('---------------')
@@ -13,7 +13,7 @@ client.on('message', message => {
   .addField("**Server: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
-if (message.content === '-*/') {
+if (message.content === '....................help') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
       .addField("**:globe_with_meridians: الأوامر العامه**","** **")
@@ -37,7 +37,7 @@ client.on('message', message => {
   .addField("**Server: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
-if (message.content === '-*/') {
+if (message.content === '................help') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
       .addField("**.:radioactive: أوامر الأداره**","** **")
@@ -56,7 +56,7 @@ client.on('message', message => {
   .addField("**Server: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
-if (message.content === '--------help') {
+if (message.content === '-----help') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
       .addField("** 🎶 اوامر الميوزك**","** **")
@@ -93,7 +93,7 @@ client.on('message', message => {
     }
 });
 client.on('message', message => {
-if (message.content.startsWith('.......ping')) {
+if (message.content.startsWith('.ping')) {
            if(!message.channel.guild) return;
 
 if (message.author.bot) return;
@@ -128,7 +128,7 @@ client.on('message', message => {
 
 
 });
-var prefix = ".......";
+var prefix = ".";
 client.on('message', message => {
     if(message.content == prefix + 'server') {
         var servername = message.guild.name
@@ -260,7 +260,7 @@ client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Script By : i1Suhaib`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} استمتع بالسيرفر ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(` *help - New Bot`,)
