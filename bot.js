@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on('ready', () => {
-  client.user.setGame(` Arrio#4084 .`,'https://www.twitch.tv/v5bz');
+  client.user.setGame(` By Suhaib #4272 .`,'https://www.twitch.tv/v5bz');
   console.log('---------------');
-  console.log('Desert Bot Is Online')
+  console.log('Desert Bot Is idle')
   console.log('---------------')
 });
 client.on('message', message => {
@@ -19,8 +19,13 @@ if (message.content === '.help') {
       .addField("**:globe_with_meridians: الأوامر العامه**","** **")
       .addField("**.ping :stopwatch:**","**لـ سرعة إتصالك**")
       .addField("**.id :chart_with_downwards_trend:**","**عرض سرعه اتصال البوت**")
+      .addField("**.avatar :camping:**","**لـ صور الشخص المختار**")
+      .addField("**.roll :1234:**","**لـ القرعه من 1 - 100**")
       .addField("**.server :recycle:**","**لـ معلومات السيرفر**")
       .addField("**.roles :medal: **","**مسح محادثات الشات**")
+      .addField("**.say :arrows_counterclockwise:**","**لـ يكرر الكلام اللى تقوله**")
+      .addField("**.time :alarm_clock:**","**لـ معرفة الساعة**")
+      .addField("**.date **","**لـ معرفة التاريخ**")
 .setColor('RANDOM')
   message.author.sendEmbed(embed);
     }
@@ -38,6 +43,8 @@ if (message.content === '.help') {
       .addField("**.:radioactive: أوامر الأداره**","** **")
       .addField("**.bc  :mega:**","**لـ البرودكاست**")
       .addField("**.clear :octagonal_sign:**","**لـ مسح الشات**")
+      .addField("**.kick  :outbox_tray:**","**لـ طرد الأعضاء**")
+      .addField("**.ban  :no_entry:**","**لـ حظر الأعضاء**")
 .setColor('RANDOM')
   message.author.sendEmbed(embed);
     }
@@ -159,11 +166,11 @@ client.on("message", message => {
       
       message.channel.fetchMessages({limit: msg}).then(messages => message.channel.bulkDelete(messages)).catch(console.error);
       message.channel.sendMessage("", {embed: {
-        title: "تمت بنجاح",
+        title: "Done | تــم",
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "GΔЛGƁΘƬ"
+          text: "Desert Bot"
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -221,7 +228,7 @@ client.on('message', message => {
     if(message.content.includes('discord.gg')){
       if(!message.member.hasPermission('ADMINISTRATOR'))
         message.delete()
-    return message.reply(`** يالوردة لا تنشر روابط تراني احبك ! **`)
+    return message.reply(`** يمنع نشر الروابط ! **`)
     }
 });
 client.on('message', message => {
@@ -234,12 +241,12 @@ client.on('message', message => {
 });
 client.on('message', message => {
 if (message.content === ".help") {
-message.reply("**تم ارسال اوامرالبوت في الخاص**")
+message.reply("**تم ارسال اوامر البوت في الخاص**")
 
 }
 });
 client.on('message', message => {
-     if (message.content === "..bot") {
+     if (message.content === ".bot") {
      let embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .addField("**Servers:**" , client.guilds.size)
@@ -251,9 +258,9 @@ message.channel.sendEmbed(embed);
 });
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`استمتع بالسيرفر`);
+      console.log(`Desert Bot- Script By : i1Suhaib`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} استمتع بالسيرفر ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(` *help - New Bot`,)
