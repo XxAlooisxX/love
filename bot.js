@@ -35,15 +35,10 @@ client.on("message", message => {
         ***__General orders__***
 **
 『id / معلومات عن حسابك』
-『embed / يكرر كلامك بمبيد』
 『roles / يعرض لك الرتب و عددها』
-『rooms / يعرض لك الرومات وعددها』
 『server / معلومات عن السيرفر』
 『animal / يعطيك صور حيوانات』
 『image / يعرض صوره السيرفر』
-『avatar / يعرض صورتك او صوره شخص』
-『time / يعرض لك الوقت』
-『date / يعرض لك التاريخ』
 『dt / يعرض الوقت في الامارات و مكه المكرمه و مصر و التاريخ』
 **
 
@@ -53,7 +48,6 @@ client.on("message", message => {
 『uptime / يعرض لك صار للبوت كم شغال』
 『support / سيرفر الدعم القني و المساعده』
 『invite / اضافه البوت』
-『members / حاله الاعضاء』
 『bot / معلومات عن البوت』
 **
 
@@ -63,9 +57,6 @@ client.on("message", message => {
 『ban / بان』
 『mute /ميوت』
 『unmute /فك الميوت』
-『mutechannel /قفل الشات』
-『unmutechannel /فتح الشات』
-f!add.r
 『delet / مسح روم』
 『color 50 /انشاء 50 لون』
 『color 100/انشاء 100 لون』
@@ -77,13 +68,7 @@ f!add.r
 
         ***__Special orders __***
 **
-『youtube / باحث اليوتيوب 』
-『afk / تصبح خارج النطاق』
-『AutoRole / اعطاء شخص رتبه تلقائيه عند دخوله』
-『imgwelcome / لتفعيل الترحيب بصوره 』
-『colors / لي عرض قائمه الوان السيرفر』
 『color / لي تغير لونك』
-『rainbow / الرنبو』
 **
 
         ***__Games orders__***
@@ -95,13 +80,6 @@ f!add.r
 『يخيرك بين شي وشي / لو خيروك』
 『يعطيك عقاب و لازم تنفذه / عقاب』
 『لعبه اسئله / كت تويت』
-**
-   
-        ***__Minecraft orders__***
-**          
-『mq / اسئله عن ماين كرافت』
-『mp / صور عن ماين كرافت』
-『mf / معلومات عن ماين كرافت』
 **  
         
 `)
@@ -1122,7 +1100,7 @@ client.on('message', message => {
   /*let b5bzlog = client.channels.find("name", "5bz-log");
 
   if(!b5bzlog) return message.reply("I've detected that this server doesn't have a 5bz-log text channel.");*/
-  if (message.mentions.users.size < 1) return message.reply("**منشن شخص**");
+  if (message.mentions.users.size < 1) return message.reply("**لا يوجد شخص**");
   if(!reason) return message.reply ("**اكتب سبب الطرد**");
   if (!message.guild.member(user)
   .bannable) return message.reply("**لايمكنني طرد شخص اعلى من رتبتي يرجه اعطاء البوت رتبه عالي**");
@@ -1152,7 +1130,7 @@ client.on("message", message => {
         
         message.channel.fetchMessages({limit: msg}).then(messages => message.channel.bulkDelete(messages)).catch(console.error);
         message.channel.sendMessage("", {embed: {
-          title: "``تــم مسح الشات ``",
+          title: "``تــم مسح الرسائل ``",
           color: 0x06DF00,
           footer: {
             
