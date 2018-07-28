@@ -822,7 +822,7 @@ client.on("message", (message) => {
  .setThumbnail(client.user.avatarURL)     
  .setDescription("Add me" + `
  **
-رابط البوت https://discordapp.com/api/oauth2/authorize?client_id=447792246494986250&permissions=2146958583&scope=bot
+رابط البوت https://discordapp.com/oauth2/authorize?client_id=471621579235655681&permissions=0&scope=bot
  **
 `);
   message.author.sendEmbed(embed);
