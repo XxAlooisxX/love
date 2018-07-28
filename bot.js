@@ -1205,7 +1205,7 @@ client.on('ready',  () => {
 client.on('ready', function(){
     client.user.setStatus("dnd");
     var ms = 100000 ;
-    var setGame = [`احبك `,`f!invite`,`f!help`,`:skull::skull:هلا بالهيكل`,`ليش تقرأ`,`تعجبني`,`CΔЅƬΓΘGΔЛG:skull:`];
+    var setGame = [`احبك `,`f!invite`,`f!help`,`هلا بالهيكل`,`ليش تقرأ`,`تعجبني`,`CΔЅƬΓΘGΔЛG`];
     var i = -1;
     var j = 0;
     setInterval(function (){
