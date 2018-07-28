@@ -687,7 +687,7 @@ message.channel.sendEmbed(cat);
   });
 
 client.on('message', message => {
-    if (message.content.startsWith("!avatar")) {
+    if (message.content.startsWith("f!avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -705,7 +705,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content.startsWith("!stats")) {
+    if (message.content.startsWith("f!stats")) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .addField('Uptime', timeCon(process.uptime()), true)
@@ -1203,7 +1203,7 @@ client.on('ready',  () => {
 client.on('ready', function(){
     client.user.setStatus("dnd");
     var ms = 100000 ;
-    var setGame = [`f!help Servers ${client.guilds.size} `,`f!invite Users ${client.users.size}`];
+    var setGame = [`احبك `,`f!invite Users ${client.users.size}`];
     var i = -1;
     var j = 0;
     setInterval(function (){
