@@ -33,7 +33,6 @@ client.on("message", message => {
         ***__General orders__***
 **
 『id / معلومات عن حسابك』
-『draw / يكرر كلامك في صوره』
 『embed / يكرر كلامك بمبيد』
 『roles / يعرض لك الرتب و عددها』
 『rooms / يعرض لك الرومات وعددها』
@@ -189,6 +188,15 @@ const Sra7a = [
    message.channel.sendEmbed(client);
    message.react("??")
  }
+});
+client.on('message', message => {
+    if (message.content === '.roles') {
+        var roles = message.guild.roles.map(roles => `${roles.name}, `).join(' ')
+        const embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .addField('Roles:',`**[${roles}]**`)
+        message.channel.sendEmbed(embed);
+    }
 });
 
 
