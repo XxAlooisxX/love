@@ -101,6 +101,10 @@ f!add.r
 『mp / صور عن ماين كرافت』
 『mf / معلومات عن ماين كرافت』
 **  
+        ***__Create Bot__***
+**
+『Name Discord / 𝒜ℛℛℐ𝒪_#4804』
+**
         
 `)
 
@@ -109,6 +113,14 @@ message.author.sendEmbed(embed)
 
 }
 }); 
+if (message.content === 'f!help') {
+         let embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)    
+      .addField("** مبرمج البوت :wrench: **","@Arrio_#4084")
+.setColor('RANDOM')
+  message.author.sendEmbed(embed);
+    }
+});
 
 
 //العاب//
@@ -822,7 +834,7 @@ client.on("message", (message) => {
  .setThumbnail(client.user.avatarURL)     
  .setDescription("Add me" + `
  **
-رابط البوت https://discordapp.com/api/oauth2/authorize?client_id=447792246494986250&permissions=2146958583&scope=bot
+رابط البوت https://discordapp.com/oauth2/authorize?client_id=471621579235655681&permissions=0&scope=bot
  **
 `);
   message.author.sendEmbed(embed);
