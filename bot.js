@@ -13,7 +13,7 @@ client.on('message', message => {
   .addField("**Server: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
-if (message.content === '..help') {
+if (message.content === '.help') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
       .addField("**:globe_with_meridians: الأوامر العامه**","** **")
@@ -241,7 +241,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
 if (message.content === ".help") {
-message.reply("**تم ارسال مبرمج البوت في الخاص**")
+message.reply("**تم ارسال اوامرالبوت في الخاص**")
 
 }
 });
