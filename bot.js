@@ -190,7 +190,7 @@ const Sra7a = [
  }
 });
 client.on('message', message => {
-    if (message.content === '.roles') {
+    if (message.content === 'f!roles') {
         var roles = message.guild.roles.map(roles => `${roles.name}, `).join(' ')
         const embed = new Discord.RichEmbed()
         .setColor('RANDOM')
